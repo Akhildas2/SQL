@@ -7,14 +7,14 @@ Developers use Structured Query Language (SQL) commands to interact with relatio
 DDL commands are used to define and manage the structure of database objects like tables, indexes, and schemas. These commands include:
 
 - **CREATE:** Defines new tables, databases, or other database objects.
+
   ```sql
   CREATE TABLE table_name (
       column1 datatype constraints,
       column2 datatype constraints,
       ...
   );
-
-```
+  ```
 
 - **ALTER:** Modifies the structure of an existing database object, such as adding or dropping columns.
 
@@ -23,7 +23,7 @@ ALTER TABLE table_name
 ADD COLUMN column_name datatype;
 ```
 
-- **DROP:**  Deletes existing tables, indexes, or other database objects.
+- **DROP:** Deletes existing tables, indexes, or other database objects.
 
 ```sql
 DROP TABLE table_name;
