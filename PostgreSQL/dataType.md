@@ -1,6 +1,6 @@
 # Data Types
 
-PostgreSQL supports a wide range of data types, which can be categorized into several groups. Below are some of the most commonly used data types along with examples of how they are used.
+SQL supports a wide range of data types, which can be categorized into several groups. Below are some of the most commonly used data types along with examples of how they are used.
 
 ## Numeric Types
 
@@ -118,6 +118,7 @@ CREATE TABLE example_table (
     event TIMESTAMP
 );
 ```
+
 ```sql
 SELECT NOW(); -- returns a current date, time
 SELECT NOW()::DATE; -- returns current date
