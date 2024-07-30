@@ -18,7 +18,10 @@ ON table1.column = table2.column;
 ### Example:
 
 ```sql
-SELECT person.first_name, car.make, car.model, car.price FROM person JOIN car ON person.car_id = car.id;
+SELECT person.first_name, car.make, car.model, car.price
+FROM person
+INNER JOIN car
+ON person.car_id = car.id;
 ```
 
 ## 2. LEFT JOIN (or LEFT OUTER JOIN)
@@ -105,17 +108,19 @@ A `SELF JOIN` is a regular join but the table is joined with itself.
 ### Syntax:
 
 ```sql
-SELECT a.columns, b.columns
+SELECT a.column1, b.column2
 FROM table a
-INNER JOIN table b
+JOIN table b
 ON a.common_column = b.common_column;
 ```
 
 ### Example:
 
 ```sql
-SELECT a.person_name AS Employee, b.person_name AS Manager
-FROM person a
-INNER JOIN person b
-ON a.manager_id = b.person_id;
+SELECT p1.first_name AS person_name, p1.country_of_birth, p2.first_name AS fellow_countryman_name
+FROM person p1
+JOIN person p2
+ON p1.country_of_birth = p2.country_of_birth
+AND p1.id != p2.id
+ORDER BY p1.country_of_birth, p1.first_name, p2.first_name;
 ```
