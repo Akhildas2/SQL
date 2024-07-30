@@ -99,6 +99,7 @@ Example:
 ```sql
 SELECT * FROM test UNION SELECT * FROM test2;
 ```
+
 `UNION` only selects distinct values (no duplicates).
 
 ## `UNION ALL`
@@ -120,6 +121,7 @@ Example:
 ```sql
 SELECT * FROM table_name INTERSECT SELECT * FROM table_name_2;
 ```
+
 ## `MINUS`
 
 The MINUS operator (also known as EXCEPT) returns the result set that is present in the first SELECT statement but not in the second SELECT statement. The number of columns and data types must be the same in both queries.

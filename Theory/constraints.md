@@ -63,6 +63,7 @@ CREATE TABLE employees (
     FOREIGN KEY (department_id) REFERENCES departments(department_id)
 );
 ```
+
 ```sql
 ALTER TABLE employees
 ADD CONSTRAINT unique_employee_email UNIQUE (email);

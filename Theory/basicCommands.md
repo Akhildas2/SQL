@@ -94,7 +94,7 @@ CREATE TABLE employees (
     first_name VARCHAR(50) ,
     last_name VARCHAR(50) ,
     email VARCHAR(100),
-    hire_date DATE 
+    hire_date DATE
 );
 ```
 
@@ -114,17 +114,17 @@ This command deletes the employees table and all its data from the database.
 ALTER TABLE employees RENAME TO staff;
 ```
 
- This command renames the employees table to staff.
+This command renames the employees table to staff.
 
- ### Renaming a Table
+### Renaming a Table
 
 ```sql
 ALTER TABLE employees RENAME TO staff;
 ```
 
- This command renames the employees table to staff.
+This command renames the employees table to staff.
 
- ### Creating a Table with Constraints
+### Creating a Table with Constraints
 
 ```sql
 CREATE TABLE departments (
@@ -132,14 +132,14 @@ CREATE TABLE departments (
     department_name VARCHAR(50) NOT NULL,
     manager_id INT,
     CONSTRAINT fk_manager
-        FOREIGN KEY(manager_id) 
+        FOREIGN KEY(manager_id)
         REFERENCES employees(employee_id)
 );
 ```
 
 This command creates a departments table with specified columns and a foreign key constraint.
 
- ### Inserting Data/Row
+### Inserting Data/Row
 
 ```sql
 INSERT INTO employees (first_name, last_name, email, hire_date)
@@ -148,7 +148,7 @@ VALUES ('John', 'Doe', 'john.doe@example.com', '2023-01-15');
 
 This command inserts a new row into the employees table.
 
- ### Deleting Data/Row
+### Deleting Data/Row
 
 ```sql
 DELETE FROM employees
@@ -157,7 +157,7 @@ WHERE employee_id = 1;
 
 This command deletes the row from the employees table where the employee_id is 1.
 
- ### Getting Data from SQL DB
+### Getting Data from SQL DB
 
 ```sql
 SELECT first_name, last_name, email
@@ -166,7 +166,7 @@ FROM employees;
 
 This command retrieves the first_name, last_name, and email columns from the employees table.
 
- ### Sorting
+### Sorting
 
 ```sql
 SELECT first_name, last_name, hire_date
@@ -176,7 +176,7 @@ ORDER BY hire_date DESC;
 
 This command retrieves and sorts employees by their hire date in descending order.
 
- ### Filtering Duplicates
+### Filtering Duplicates
 
 ```sql
 SELECT DISTINCT department_name
@@ -185,7 +185,7 @@ FROM departments;
 
 This command retrieves unique department names from the departments table.
 
- ### Filtering
+### Filtering
 
 ```sql
 SELECT first_name, last_name, email
@@ -193,9 +193,9 @@ FROM employees
 WHERE hire_date > '2023-01-01';
 ```
 
- This command retrieves rows from the employees table where the hire date is after January 1, 2023.
+This command retrieves rows from the employees table where the hire date is after January 1, 2023.
 
- ### Selecting String with Condition
+### Selecting String with Condition
 
 ```sql
 SELECT first_name, last_name, email
@@ -205,7 +205,7 @@ WHERE email LIKE '%@example.com';
 
 This command retrieves rows where the email ends with @example.com.
 
- ### Limiting the Number of Results
+### Limiting the Number of Results
 
 ```sql
 SELECT first_name, last_name, email
@@ -215,7 +215,7 @@ LIMIT 5;
 
 This command limits the number of rows returned by the query to 5.
 
- ### Skipping Rows in the Results
+### Skipping Rows in the Results
 
 ```sql
 SELECT first_name, last_name, email
@@ -223,9 +223,9 @@ FROM employees
 OFFSET 10;
 ```
 
- This command skips the first 10 rows before returning results.
+This command skips the first 10 rows before returning results.
 
- ### IN
+### IN
 
 ```sql
 SELECT first_name, last_name, email
@@ -235,7 +235,7 @@ WHERE department_id IN (1, 2, 3);
 
 This command retrieves rows where the department_id is either 1, 2, or 3.
 
- ### BETWEEN
+### BETWEEN
 
 ```sql
 SELECT first_name, last_name, email

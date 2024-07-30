@@ -1,4 +1,4 @@
-# Transitive Dependency 
+# Transitive Dependency
 
 A transitive dependency occurs in a relational database when a non-key attribute depends on another non-key attribute rather than directly on the primary key. This type of dependency can lead to data redundancy and anomalies.
 

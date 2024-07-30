@@ -137,6 +137,7 @@ Retrieves specific columns and rows based on a condition.
   SET price = 60000
   WHERE id = 196;
   ```
+
 - Drop View:
 
   ```sql

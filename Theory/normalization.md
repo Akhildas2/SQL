@@ -210,15 +210,19 @@ Normalization helps maintain a clean and efficient database design, addressing v
 ## Advantages
 
 1. **Reduced Redundancy**
+
    - Eliminates duplicate data, saving storage and ensuring consistency.
 
 2. **Improved Data Integrity**
+
    - Minimizes data anomalies and errors.
 
 3. **Easier Maintenance**
+
    - Simplifies updates and changes by centralizing data.
 
 4. **Improved Query Performance (in some cases)**
+
    - Can make queries more efficient by reducing data volume.
 
 5. **Enhanced Flexibility**
@@ -227,15 +231,19 @@ Normalization helps maintain a clean and efficient database design, addressing v
 ## Disadvantages
 
 1. **Increased Complexity**
+
    - Makes the database schema more complex and harder to understand.
 
 2. **Potential Performance Overhead**
+
    - Joins between multiple tables can slow down queries.
 
 3. **Increased Development Time**
+
    - Requires more time to design and implement.
 
 4. **Complex Data Retrieval**
+
    - Queries can become more complex and harder to optimize.
 
 5. **Storage Overhead**
