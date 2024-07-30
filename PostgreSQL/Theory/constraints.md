@@ -1,4 +1,4 @@
-# SQL Constraints
+# Constraints
 
 Constraints in SQL are used to enforce rules on the data in a table. They ensure the accuracy and reliability of the data in a database. Here are the main types of constraints:
 

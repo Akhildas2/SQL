@@ -1,4 +1,4 @@
-# SQL Operators
+# Operators
 
 ## Arithmetic Operators
 

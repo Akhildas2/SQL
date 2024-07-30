@@ -1,4 +1,4 @@
-# SQL Aliases
+# Aliases
 
 An alias in SQL is a temporary name given to a table or a column for the duration of a query. Aliases are useful for making queries easier to read and write, especially when dealing with complex queries or when joining multiple tables. They are also handy for avoiding column name conflicts when performing joins or subqueries.
 
